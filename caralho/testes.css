@@ -1,0 +1,149 @@
+.container {
+    position: relative;
+    width: 50%;
+  }
+  .container2 {
+    position: relative;
+    width: 50%;
+  }
+
+  .fuscafrente {
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+  .fuscatras {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .versafrente {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .versatras {
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+  .unofrente {
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+  .unotras {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .spinfrente {
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+  .spintras {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .images {
+    white-space: nowrap; 
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .top-link {
+    transition: all .25s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3em 3em 0;
+    border-radius: 50%;
+    padding: .5em;
+    width: 40px;
+    height: 40px;
+   background-color: #F8F8F8;
+}
+
+body {
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body{
+    background-color: #ddd;
+  }
+  .footer {
+    background-color: #333;
+    font-family: "Times New Roman", Times, serif;
+    float: right; 
+  }
+ 

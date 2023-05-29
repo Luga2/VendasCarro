@@ -1,0 +1,53 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulário</title>
+<link href="form2.css" rel="stylesheet">
+</head>
+<body>
+<div class="formulario">
+	<form oninput="total.value = (diarias.valueAsNumber * 99) + ((convidados.valueAsNumber - 1) * 10)">
+	
+	<label>Nome Completo</label>
+	<input type="text" id="full_name" name="full_name" placeholder="Digite seu nome completo" required>
+	
+	<label>Endereço de Email</label>
+	<input type="email" id="end_email" name="end_email" required>
+	
+	<label>Repetir o email</label>
+	<input type="email" id="repeat_email" name="repeat_email" required oninput="check(this)">
+	
+    <label>Digite a sua senha:</label>
+	<input type="password" name="senha" id="senha" required>
+
+	<label>Data da Partida</label>
+	<input type="date" id="partida" name="partida" required>
+	
+	<label>Quantidade de dias(Diária de $99,00):</label>
+	<input type="number" id="diarias" name="diarias" value="1" min="1" max="30" required>
+	
+	<label>Estimativa de Simulação</label>
+	<output id="total" name="total">$ 99</output>,00
+	<br><br>
+	
+	<label>Código Promocional</label>
+	<input type="text" id="promo" name="promo" pattern="[A-Za-f0-9]" title="Insira o código de promoção recebido">
+	
+	<input type="submit" value="Solicitar Reserva">
+	<a href="vendas.html">Próximo</a>
+	</form>
+</div>	
+	
+<script>
+	function check(input) {
+		if(input.value != document.getElementById('end_email').value) {
+		input.setCustomValidity('Os emails digitados não conferem');}
+		else {
+		input.setCustomValidity('');
+		}
+	}
+</script>
+	
+</body>
+</html>

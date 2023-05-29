@@ -1,0 +1,33 @@
+:invalid {
+	border-color:#e88;
+	box-shadow:0 0 5px rgba(255,0,0,.8);
+}
+
+:required {
+	border-color:#88a;
+	box-shadow:0 0 5px rgba(0,0,255,.6);
+}
+
+form {
+	width:300px;
+	margin:20px auto;
+	padding:8px;
+	
+}
+
+input {
+	font-family:verdana;
+	font-size:14px;
+	min-height:30px;
+	display:block;
+	margin-bottom:5px;
+	margin-top:5px;
+	border-radius:5px;
+	width:90%;
+	outline:none;
+	}
+
+input[type=submit] {
+	background:none;
+	padding:10px;
+}
